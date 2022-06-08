@@ -1,0 +1,22 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "Demo"
+include ':app'
+include ':core:ui'
+include ':core:data'
+include ':core:utils'
+include ':feature:sports:domain'
+include ':feature:sports:data'
+include ':feature:sports:ui'

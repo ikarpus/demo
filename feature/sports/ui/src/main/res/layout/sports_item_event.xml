@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:minWidth="100dp"
+    android:orientation="vertical">
+
+    <com.iskar.demo.sports.ui.view.CountdownTextView
+        android:id="@+id/tvTimeLeft"
+        style="@style/Sports_ItemContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/sports_bg_timer"
+        tools:text="HH:MM:SS" />
+
+    <ImageView
+        android:id="@+id/ivFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:src="@drawable/sports_selector_favorite"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tvPlayerOne"
+        style="@style/Sports_ItemContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Team 1" />
+
+    <TextView
+        android:id="@+id/tvPlayerTwo"
+        style="@style/Sports_ItemContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Team 2" />
+
+</LinearLayout>
